@@ -10,7 +10,7 @@ import java.sql.DriverManager;
 public class ConnectionFactory {
     
     private String usuario = "root";
-    private String senha = "1234";
+    private String senha = "210511";
     private String host = "localhost";
     private String porta = "3306";
     private String bd = "db_pessoas";
@@ -18,7 +18,7 @@ public class ConnectionFactory {
     public Connection obtemConexao (){
         try{
             Connection c = DriverManager.getConnection(
-                "jdbc:mysql://" + host + ":" + porta + "/" + bd,
+                "jdbc:mysql://" + host + ":" + porta + "/" + bd+"?serverTimezone=UTC",
                 usuario,
                 senha
             );

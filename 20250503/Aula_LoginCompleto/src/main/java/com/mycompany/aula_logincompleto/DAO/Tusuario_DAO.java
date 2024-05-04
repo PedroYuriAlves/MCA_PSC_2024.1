@@ -18,7 +18,7 @@ public class Tusuario_DAO {
     public boolean login(Tusuario usu) {
 
         //1: Definir o comando SQL
-        String sql = "SELECT * FROM tusuario WHERE login = ? AND senha = ?";
+        String sql = "SELECT * FROM tusuario WHERE USU_LOGIN = ? AND USU_SENHA = ?";
         // String sql = "SELECT * FROM TUSUARIO "                + "WHERE login = '"+usu.getLogin()+"' AND senha = '"+usu.getSenha()+"'";
 
 //2: Abrir uma conexão
